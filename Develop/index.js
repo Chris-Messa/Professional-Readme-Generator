@@ -18,9 +18,18 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'List the table of contents',
+        message: 'List the table of contents, separated with a comma',
         name: 'tableOfContents',
+        // Feel very proud about figuring this out on my own 😊
+        filter: (answer) => { 
+            const contents = answer.split(',')
+            
+            const contentList = contents.map(item => `- ${item}\n`).join('')
+            
+            return contentList
+        }
     },
+
     {
         type: 'input',
         message: 'Write a guide on installation of the project',
@@ -57,6 +66,7 @@ const questions = [
 function writeToFile(data) {
     inquirer.prompt(data)
         .then(response => {
+            console.log(response.tableOfContents);
             fs.writeFile('README.md', generateMD(response), err => {
                 err ? console.log(err) : console.log('File Written');
             })
