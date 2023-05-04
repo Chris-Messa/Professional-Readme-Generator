@@ -2,7 +2,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer')
 const generateMD = require('./utils/generateMarkdown.js');
-console.log(generateMD.generateMarkdown);
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -18,20 +17,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'List the table of contents, separated with a comma',
-        name: 'tableOfContents',
-        // Feel very proud about figuring this out on my own 😊
-        filter: (answer) => { 
-            const contents = answer.split(',')
-            
-            const contentList = contents.map(item => `- ${item}\n`).join('')
-            
-            return contentList
-        }
-    },
-
-    {
-        type: 'input',
         message: 'Write a guide on installation of the project',
         name: 'installation',
     },
@@ -41,8 +26,9 @@ const questions = [
         name: 'usage',
     },
     {
-        type: 'input',
-        message: 'List the license associated with your project',
+        type: 'list',
+        message: 'Choose a license',
+        choices: ['Apache', 'MIT', 'GPL'],
         name: 'license',
     },
     {
@@ -65,8 +51,9 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(data) {
     inquirer.prompt(data)
+
         .then(response => {
-            console.log(response.tableOfContents);
+           
             fs.writeFile('README.md', generateMD(response), err => {
                 err ? console.log(err) : console.log('File Written');
             })
@@ -74,6 +61,7 @@ function writeToFile(data) {
 }
 
 // TODO: Create a function to initialize app
+
 function init() {
     writeToFile(questions);
 }
