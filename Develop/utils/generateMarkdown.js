@@ -2,6 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badgeLink;
+
   switch (license) {
     case 'Apache': 
     badgeLink = `[![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
@@ -28,12 +29,34 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log(license)
+  let licenseLink;
+
+  switch (license) {
+    case 'Apache': 
+    licenseLink = `[License LInk](https://opensource.org/licenses/Apache-2.0)`
+      break    
+    case 'MIT': 
+     licenseLink = `[License Link](https://opensource.org/licenses/MIT)`
+      break
+    case 'GPL': 
+      licenseLink = `[License Link](https://www.gnu.org/licenses/gpl-3.0)`
+      break
+    case 'Creative Commons':
+      licenseLink = `[License Link](http://creativecommons.org/publicdomain/zero/1.0/)`
+      break
+    case 'Mozilla':
+      licenseLink = `[License Link](https://opensource.org/licenses/MPL-2.0)`
+      break
+    default: 
+      licenseLink = ''
+  }
+  return licenseLink
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  return license;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -47,7 +70,12 @@ ${data.description}
 
 ## Table of Contents
 
-
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Installation
 
@@ -57,10 +85,9 @@ ${data.installation}
 
 ${data.usage}
 
-## License
+## ${renderLicenseSection(data.license)}
 
-${data.license}
-
+${renderLicenseLink(data.license)}
 
 ## Contributing
 
