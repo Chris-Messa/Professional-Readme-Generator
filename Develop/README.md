@@ -1,9 +1,9 @@
 
-# akfjwoinev <a name="akfjwoinev"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Professional README Generator <a name="professional readme generator"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-wevoinwe
+This project allows the user to use their command line to build a professional README for their project
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ wevoinwe
 
 ## Installation
 
-weiovnwiev
+To install the project, ensure that node.js is installed, clone the files to your local machine, and run npm install
 
 ## Usage
 
-oinvowenv
+To use the project, run the command "node index.js" in the command line, then type/ select the answer to each prompt followed by hitting the enter key
 
 ## MIT
 
@@ -28,13 +28,13 @@ oinvowenv
 
 ## Contributing
 
-vnmoisdvnhs
+None
 
 ## Tests
 
-nvoisdnv
+None
 
 ## Questions
 
-wnoiewfn
+none
     
