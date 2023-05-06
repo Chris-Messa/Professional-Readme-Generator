@@ -1,23 +1,40 @@
 
-# Professional README Generator
+# My Cool Cat Game <a name="my cool cat game"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-This project allows the user to use their command line to build a professional README for their project
+This is a cool game where you upgrade a collection of cats
 
 ## Table of Contents
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-To install the project, ensure that node.js is installed, clone the files to your local machine, and run npm install
+To install the Game, first you will need to make sure internet explorer is downloaded, then, run adobe flash
 
 ## Usage
 
-To use the project, run the command "node index.js" in the command line, then type/ select the answer to each prompt followed by hitting the enter key
+To play the game, open adobe flash player and run the cat game file. Then select your starting cat. The tutorial will show you how to do the rest
+
+## MIT
+
+[License Link](https://opensource.org/licenses/MIT)
+
+## Contributing
+
+Cheese
+
+## Tests
+
+N/A
+
+## Questions
+
+N/A
+    
