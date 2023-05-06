@@ -72,7 +72,7 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [${renderLicenseSection(data.license)}](#${renderLicenseSection(data.license)})
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
