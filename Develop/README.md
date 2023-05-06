@@ -1,5 +1,5 @@
 
-# Professional README Generator <a name="professional readme generator"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Professional README Generator
 
 ## Description 
     
@@ -21,20 +21,3 @@ To install the project, ensure that node.js is installed, clone the files to you
 ## Usage
 
 To use the project, run the command "node index.js" in the command line, then type/ select the answer to each prompt followed by hitting the enter key
-
-## MIT
-
-[License Link](https://opensource.org/licenses/MIT)
-
-## Contributing
-
-None
-
-## Tests
-
-None
-
-## Questions
-
-none
-    
