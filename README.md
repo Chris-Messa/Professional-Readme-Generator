@@ -20,3 +20,7 @@ To install the project, ensure that node.js is installed, clone the files to you
 ## Usage
 
 To use the project, run the command "node index.js" in the command line, then type/ select the answer to each prompt followed by hitting the enter key
+
+### Source
+
+Github repo link: https://github.com/Chris-Messa/Professional-Readme-Generator
